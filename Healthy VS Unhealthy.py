@@ -27,7 +27,7 @@ im
 # In[35]:
 
 
-learn = load_learner('export.pkl')
+learn = load_learner('model.pkl')
 
 
 # In[36]:
@@ -43,7 +43,7 @@ categories = ('Rotten', 'Healthy')
 
 def classify_images(img):
     # load your model
-    learn = load_learner("export.pkl")
+    learn = load_learner("model.pkl")
     
     # make prediction
     pred, _, probs = learn.predict(img)
